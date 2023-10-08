@@ -38,7 +38,8 @@ body {
 
 .offers {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 2rem;
     align-items: center;
 }
 
@@ -49,7 +50,7 @@ body {
     align-items: center;
     cursor: pointer;
     width: 3.8rem;
-    height: 2rem;
+    height: 2.1rem;
     border-radius: 25px;
     background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     transition: background .3s ease;
@@ -62,7 +63,6 @@ body {
     height: 1.7rem;
     border-radius: 50%;
     background-color: hsl(240, 78%, 98%);
-    transition: background .3s ease;
 }
 
 .right {
@@ -76,8 +76,94 @@ body {
 .cards {
     display: flex;
     flex-direction: row;
+    border-radius: 10px;
+    padding: 2.1rem 0.8rem;
 }
 
 .card:not(#blue) {
     background-color: white;
+}
+
+.card {
+    margin-block: 1rem;
+    border-radius: 10px;
+    padding: 2.1rem 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+}
+
+#blue {
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: #fff;
+    margin-top: -.2rem;
+    margin-bottom: -.2rem;
+    padding: 3rem 1rem;
+}
+
+.card p {
+    font-size: 19px;
+}
+
+.card h1 {
+    font-size: 69px;
+    margin-top: 1rem;
+}
+
+.card p:not(#blue p) {
+    color: hsl(234, 14%, 74%);
+}
+
+.card h1:not(#blue h1) {
+    color: hsl(232, 13%, 33%)
+}
+
+.tariff {
+    margin-block: 2rem;
+}
+
+
+.card h6 {
+    font-size: 15px;
+    padding: 1.06rem;
+    border-top: .1px solid hsl(234, 14%, 74%);
+    border-bottom: .1px solid hsl(234, 14%, 74%);
+}
+
+.card h6:not(#blue h6) {
+    color: hsl(234, 14%, 74%);
+}
+
+.card button {
+    width: 100%;
+    font-family: inherit;
+    cursor: pointer;
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border: 1px solid transparent;
+    outline: none;
+    padding: 12px;
+    color: #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: .3s ease;
+}
+
+.blueBtn {
+    border: 1px solid #fff !important;
+    background: #fff !important;
+    color: hsl(237, 63%, 64%) !important;
+    transition: .3s ease !important;
+}
+
+.btn:hover {
+    border: 1px solid hsl(237, 63%, 64%);
+    background: transparent;
+    color: hsl(237, 63%, 64%);
+}
+
+.blueBtn:hover {
+    border: 1px solid #fff !important;
+    background: transparent !important;
+    color: #fff !important;
 }
