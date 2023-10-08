@@ -48,6 +48,7 @@ body {
     position: relative;
     display: inline-flex;
     align-items: center;
+    justify-content: flex-end;
     cursor: pointer;
     width: 3.8rem;
     height: 2.1rem;
@@ -63,10 +64,6 @@ body {
     height: 1.7rem;
     border-radius: 50%;
     background-color: hsl(240, 78%, 98%);
-}
-
-.right {
-    justify-content: flex-end;
 }
 
 .left {
@@ -91,7 +88,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 300px;
+    width: 310px;
 }
 
 #blue {
@@ -166,4 +163,44 @@ body {
     border: 1px solid #fff !important;
     background: transparent !important;
     color: #fff !important;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+}
+
+@media(max-width:964px) {
+    body {
+        padding-top: 5rem;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 500px;
+    }
+
+    #blue {
+        margin-block: 0;
+        padding: 2.1rem 0.8rem;
+    }
+}
+
+@media(max-width:528px) {
+    .card {
+        width: 350px;
+    }
+}
+
+@media(max-width:366px) {
+    .card {
+        width: 260px;
+    }
+
+    .card h1 {
+        font-size: 45px;
+    }
 }
