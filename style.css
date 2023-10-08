@@ -8,4 +8,76 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: hsl(240, 78%, 98%);
+    background-image: url('./images/bg-top.svg'), url('./images/bg-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 26.5%, 26.5%;
+    background-position: top 0 right -1rem, bottom -4.7rem left -1.9rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+}
+
+.title {
+    color: hsl(233, 13%, 49%);
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.offers {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.toggle {
+    border: none;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    width: 3.8rem;
+    height: 2rem;
+    border-radius: 25px;
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    transition: background .3s ease;
+}
+
+.toggle_btn {
+    cursor: pointer;
+    position: relative;
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+    background-color: hsl(240, 78%, 98%);
+    transition: background .3s ease;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.card:not(#blue) {
+    background-color: white;
 }
